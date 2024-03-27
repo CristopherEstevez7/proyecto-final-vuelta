@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f4eb ;
+    background-color: #121f59f6 ;
 }
 h1{
     font-family: 'Passion One', sans-serif;
@@ -34,7 +34,7 @@ h1{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color:rgb(82, 141, 132);
+    background-color:rgba(13, 93, 163, 0.981);
     
 }
 .nav-ul{
@@ -74,7 +74,20 @@ h1{
     font-size: large;
     padding: 20px;
 }
-
+.btn{
+    color:white;
+    background-color:rgb(231, 70, 115)
+}
+.card{
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(13, 93, 163, 0.3);
+}
+.card-text , .card-title{
+    color:beige;
+}
+.card-body{
+    background-color: rgba(13, 93, 163, 0.5);
+}
 .g-maps-grande{
     width: 100%;
     display: none;
@@ -83,10 +96,14 @@ h1{
     width: 100%;
     display: none;
 }
-/* .categoria-index{
-    padding: 100px 0;
- 
-} */
+.carousel-caption{
+    background-color: rgba(13, 93, 163, 0.5);
+}
+.categoria-index{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 /*Nosotros*/
 .nosotros{
     display: grid;
@@ -280,7 +297,7 @@ grid-area: horarios;
 .pie{
     background-color: #e74673;
     position: absolute;
-    top: 980px;
+    top: 1500px;
     width: 100%;
     height: 100px;
 
@@ -367,6 +384,7 @@ grid-area: horarios;
     }
     .categoria-index{
         padding: 50px 0;
+        flex-direction: column;
     }
     .nosotros{
         grid-template-columns: 300px;
