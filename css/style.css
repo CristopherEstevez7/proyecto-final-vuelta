@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(13, 93, 163, 0.981); }
+
+.h1 {
+  font-family: 'Passion One', sans-serif;
+  color: #e74673;
+  margin: 10px;
+  padding: 10px; }
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgba(13, 93, 163, 0.981); }
+  header nav .navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center; }
+    header nav .navbar-nav .nav-item .nav-link {
+      text-decoration: none;
+      color: white; }
+      header nav .navbar-nav .nav-item .nav-link:hover {
+        color: #e74673; }
+    header nav .navbar-nav .nav-item .suscripcion {
+      background-color: #e74673;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none; }
+      header nav .navbar-nav .nav-item .suscripcion:hover {
+        background-color: #0f020651; }
+  header nav .collapse {
+    justify-content: end; }
+  header nav .logo-grande {
+    width: 200px;
+    margin: 15px; }
+  header nav .logo-chico {
+    width: 44px;
+    margin: 15px 250px 15px 10px; }
+
+main .carousel-caption {
+  background-color: rgba(13, 93, 163, 0.5); }
+
+main .categoria-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 50px; }
+  main .categoria-index .card {
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(231, 70, 115, 0.5);
+    background-color: beige; }
+    main .categoria-index .card .card-text, main .categoria-index .card .card-title {
+      color: rgba(13, 93, 163, 0.5); }
+    main .categoria-index .card .btn {
+      color: white;
+      background-color: #e74673; }
+
+footer {
+  background-color: #e74673;
+  position: absolute;
+  top: 1500px;
+  width: 100%;
+  height: 100px; }
+  footer .gracias {
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 20px; }
