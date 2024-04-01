@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -76,3 +77,255 @@ footer {
     text-align: center;
     font-size: large;
     padding: 20px; }
+
+/**estilo-css***********************************************/
+/*Nosotros*/
+.nosotros {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(3, 300px);
+  justify-content: center;
+  align-content: center;
+  gap: 20px; }
+
+.mision {
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); }
+
+.vision {
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); }
+
+.valores {
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); }
+
+.mision h2 {
+  color: #e74673; }
+
+.vision h2 {
+  color: #e74673; }
+
+.valores h2 {
+  color: #e74673; }
+
+.footer {
+  margin-top: 700px; }
+
+/**/
+/*suscribite y contacto**/
+.formulario {
+  margin-top: 100px; }
+
+.nya {
+  margin: 10px;
+  padding: 10px; }
+
+.comercio {
+  margin: 10px;
+  padding: 10px; }
+
+.dom {
+  margin: 10px;
+  padding: 10px; }
+
+.tel {
+  margin: 10px;
+  padding: 10px; }
+
+.mail {
+  margin: 10px;
+  padding: 10px; }
+
+.comentario {
+  margin: 10px;
+  padding: 10px; }
+
+.textarea {
+  margin: 10px;
+  padding: 10px; }
+
+.botones {
+  margin: 10px;
+  padding: 10px; }
+
+.logopng {
+  width: 100px;
+  height: 100px; }
+
+li a {
+  text-decoration: none; }
+
+/**Categorias*/
+.categorias {
+  display: none; }
+
+.categorias li:hover {
+  background-color: #e74673;
+  border-radius: 5px; }
+
+.categorias-chico {
+  display: none; }
+
+/**/
+/*automotriz**/
+.automotriz {
+  display: grid;
+  width: 90%;
+  height: 70vh;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(4, 150px);
+  grid-template-areas: "lista . mapa mapa mapa" "lista . mapa mapa mapa" "lista . mapa mapa mapa" "lista . mapa mapa mapa";
+  justify-content: center;
+  align-content: center; }
+
+.map-cat {
+  grid-area: mapa; }
+
+.map-cat iframe {
+  width: 100%;
+  height: 100%; }
+
+.lista-auto {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  grid-area: lista;
+  justify-self: center;
+  align-self: center; }
+
+.barbag {
+  width: 150px; }
+
+.prolube {
+  width: 150px; }
+
+/**barbagallo*/
+.barbagallo {
+  display: grid;
+  width: 90%;
+  height: 70vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(4, 200px);
+  gap: 20px;
+  grid-template-areas: ". . . logo logo" "tour tour tour desc desc" "tour tour tour mapa mapa" ". . . horarios horarios"; }
+
+.tour-virtual {
+  grid-area: tour; }
+
+.tour-virtual iframe {
+  width: 100%;
+  height: 100%; }
+
+.logo-barbagallo {
+  grid-area: logo;
+  justify-self: start;
+  align-self: self-end; }
+
+.logo-barbagallo img {
+  width: 200px; }
+
+.descripcion {
+  grid-area: desc; }
+
+.descripcion h2 {
+  color: #e74673; }
+
+.mapa-barbagallo {
+  grid-area: mapa; }
+
+.mapa-barbagallo img {
+  width: 100%;
+  height: 100%; }
+
+.horarios-barbagallo {
+  grid-area: horarios; }
+
+.horarios {
+  border-style: double; }
+
+.pie {
+  background-color: #e74673;
+  position: absolute;
+  top: 1500px;
+  width: 100%;
+  height: 100px; }
+
+.contacto a {
+  color: #f7f4eb;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px; }
+
+.logocontact {
+  width: 500px;
+  position: absolute;
+  right: 200px; }
+
+.logosusc {
+  width: 700px;
+  position: absolute;
+  right: 100px; }
+
+.volver a {
+  color: #e74673;
+  text-decoration: none;
+  margin: 20px;
+  padding: 10px; }
+
+/**media queries*/
+/*tablet*/
+.logo-grande, .logo-chico {
+  display: none; }
+
+/* Mostrar imagen grande para pantallas grandes */
+@media (min-width: 769px) {
+  .logo-grande {
+    display: flex; } }
+
+/* Mostrar imagen pequeña para pantallas pequeñas */
+@media (max-width: 768px) {
+  .logo-chico {
+    display: flex; }
+  .nosotros {
+    grid-template-columns: 600px; } }
+
+/*Mobile*/
+/* Mostrar mapa grande para pantallas grandes */
+@media (min-width: 321px) {
+  .g-maps-grande {
+    display: block; }
+  .categorias {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none; } }
+
+@media (max-width: 320px) {
+  .logo-chico {
+    width: 50px;
+    margin: 15px 150px 15px 10px; }
+  .g-maps-chico {
+    display: block; }
+  .categorias-chico {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none; }
+  .categoria-index {
+    padding: 50px 0;
+    flex-direction: column; }
+  .nosotros {
+    grid-template-columns: 300px;
+    gap: 10px;
+    font-size: x-small; } }
