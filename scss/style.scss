@@ -1,89 +1,16 @@
 
 @import "./base/generales";
 @import "_index.scss";
+@import "./utilities/variables";
+@import "_nosotros.scss";
 /**estilo-css***********************************************/
 
 /*Nosotros*/
-.nosotros{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: repeat(3,300px);
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-}
-.mision{
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px rgba(0, 0,0, 0.5);
-    
-}
-.vision{
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px rgba(0, 0,0, 0.5);
-}
-.valores{
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px rgba(0, 0,0, 0.5);
-}
-.mision h2{
-    color: #e74673;
-}
-.vision h2{
-    color: #e74673;
-}
-.valores h2{
-    color:#e74673;
-}
-.footer{
-    margin-top: 700px;
-}
+
 /**/
 /*suscribite y contacto**/
 
-.formulario{
-    margin-top: 100px;
-}
-.nya{
-    margin: 10px;
-    padding: 10px;
-}
-.comercio{
-    margin: 10px;
-    padding: 10px;
-}
-.dom{
-    margin: 10px;
-    padding: 10px;
-}
-.tel{
-    margin: 10px;
-    padding: 10px;
-}
-.mail{
-    margin: 10px;
-    padding: 10px;
-}
-.comentario{
-    margin: 10px;
-    padding: 10px;
-}
-.textarea{
-    margin: 10px;
-    padding: 10px;
-}
-.botones{
-    margin: 10px;
-    padding: 10px;
-}
-.logopng{
-    width: 100px;
-    height: 100px;
 
-}
-li a{
-    text-decoration: none;
-}
 /**Categorias*/
 .categorias{
     display: none;
@@ -99,46 +26,7 @@ li a{
 /**/
 
 /*automotriz**/
-.automotriz{
-    display: grid;
-    width: 90%;
-    height: 70vh;
-    grid-template-columns: repeat(5,300px);
-    grid-template-rows: repeat(4,150px);
-    grid-template-areas:
-    "lista . mapa mapa mapa"
-    "lista . mapa mapa mapa"
-    "lista . mapa mapa mapa"
-    "lista . mapa mapa mapa" 
-    ;
-    justify-content: center;
-    align-content: center;
-}
-.map-cat{
-    grid-area: mapa;
-}
-.map-cat iframe{
-    width: 100%;
-    height: 100%;
-}
 
-.lista-auto{
-    display: flex;
-    flex-direction: column;
-    gap:50px;
-    justify-content: center;
-    list-style: none;
-    text-decoration: none;
-    grid-area: lista;
-    justify-self: center;
-    align-self: center;
-}
-.barbag{
-    width: 150px;
-}
-.prolube{
-    width: 150px;
-}
 
 
 /**barbagallo*/
