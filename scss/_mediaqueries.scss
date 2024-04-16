@@ -2,9 +2,8 @@
 /*Desktop*/
 @media (min-width:1024px){
     .categoria-index{
-        grid-template-columns: 10px 300px 300px 10px;
-        grid-template-areas: 
-        ". card-1 card-2 .";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
     }
 }
 
@@ -23,9 +22,6 @@
 @media (max-width: 768px) {
     .logo-chico {
     display:flex;
-    }
-    .nosotros{
-        grid-template-columns: 600px;
     }
 }
 /*Mobile*/
