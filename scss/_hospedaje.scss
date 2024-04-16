@@ -1,37 +1,38 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
+main{
+    @include fondo(url(../assets/fondo-2.jpeg),no-repeat,cover);
+}
+.hosp-section{
+    display: flex;
+    justify-content:center;
+    padding: 50px;
 .hospedaje{
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns: repeat(5,300px);
-    grid-template-rows: repeat(4,150px);
-    grid-template-areas:
-    "lista . mapa mapa mapa"
-    "lista . mapa mapa mapa"
-    "lista . mapa mapa mapa"
-    "lista . mapa mapa mapa" 
-    ;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     align-content: center;
-    @include fondo(url(../assets/fondo-2.jpeg),no-repeat,cover);
     .lista{
-        .card{
-            border-radius: 5px;
-            box-shadow: $box-shadow;
-            background-color: beige;
-            .card-text , .card-title{
-                color:rgba(13, 93, 163, 0.5);
-            }
+            .card{
+                border-radius: 5px;
+                box-shadow: $box-shadow;
+                background-color: beige;
+                .card-text , .card-title{
+                    color:rgba(13, 93, 163, 0.5);
+                }
+        }
+        justify-self: center;
+        align-self: center;
     }
-}
-}
-.map-cat{
-    grid-area: mapa;
-}
-.map-cat iframe{
-    width: 100%;
-    height: 100%;
+    .map-cat{
+        justify-self: center;
+        align-self: center;
+    }
+    }
+
 }
 .lista{
     ul{
@@ -43,7 +44,7 @@
 .hospedaje-f{
     background-color: #e74673;
     position: absolute;
-    top: 1040px;
+    top: 1150px;
     width: 100%;
     height: 100px;
     .gracias{

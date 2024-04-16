@@ -3,26 +3,22 @@
 .nosotros{
     @include flex(100%,80vh,center,center,row);
     @include fondo(url(../assets/fondo-2.jpeg),no-repeat,cover);
-}
-.mision{
-    width: 50%;
-    height: 30vh;
-    border-radius: 5px;
-    box-shadow: $box-shadow;
-    background-color: $background-color;
-    color: $color-fuente;
-    h2{
-        padding: 10px;
+    .nos{
+        width: 50%;
+        height: 30vh;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        background-color: $background-color;
+        color: $color-fuente;
+        h2{
+            padding: 10px;
+            color: #e74673;
+        }
+        p{
+            padding: 10px;
+        }
+        
     }
-    p{
-        padding: 10px;
-    }
-    
-}
-
-.mision h2{
-    color: #e74673;
-    
 }
 
 footer{

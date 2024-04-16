@@ -1,9 +1,22 @@
 @import "_index.scss";
 /*Desktop*/
-@media (max-width:1024px){
-    .categoria-index{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
+
+@media only screen and(max-width:1024px ){
+    main{
+        .card-section{
+            .categoria-index{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                gap:20px;
+            }
+        }
+    }
+    .nosotros{
+        .nos{
+            width: 70%;
+            height: 40vh;
+            
+        }
     }
 }
 
@@ -11,48 +24,116 @@
 .logo-grande, .logo-chico {
     display: none;
 }
-  /* Mostrar imagen grande para pantallas grandes */
-
+@media (max-width:900px){
+    main{
+        .fondo{
+            .slogan{
+                font-size:20px
+            }
+            .slogan-1{
+                font-size:25px;
+            }
+        }
+    }
+}
 @media (min-width: 769px) {
     .logo-grande {
     display: flex;
     }
 }
-  /* Mostrar imagen pequeña para pantallas pequeñas */
 @media (max-width: 768px) {
     .logo-chico {
     display:flex;
     }
+    main{
+        .fondo{
+        .d-flex{
+            width: 100%;
+        }
+        }
+    }
+    .nosotros{
+        .nos{
+            width: 80%;
+            height: 50vh;
+            
+        }
+    }
+    .contacto{
+        label{
+            font-size:small;
+        }
+    }
+} 
+@media (max-width:670px){
+    main{
+        .fondo{
+            .slogan{
+                font-size:15px;
+            }
+            .slogan-1{
+                font-size:20px;
+            }
+        }
+    }
+}
+@media (max-width:540px){
+    .nosotros{
+        .nos{
+            width: 90%;
+            height: 50vh;
+            
+        }
+    }
 }
 /*Mobile*/
      /* Mostrar mapa grande para pantallas grandes */
-
-    @media (min-width: 321px) {
-    .g-maps-grande {
-    display: block;
+     @media only screen and(max-width:426px ){
+        main{
+            .card-section{
+                .categoria-index{
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(4,1fr);
+                    gap:20px;
+                }
+            }
+        }
     }
-}
 @media (max-width: 320px) {
     .logo-chico{
         width: 50px;
         margin: 15px 150px 15px 10px;
     }
-    .g-maps-chico{
-    display:block
-    }
-    .categorias-chico{
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-            justify-content:space-around;
-            text-decoration: none;
-            list-style: none;
-        
-        
+    .card-section{
+        .categoria-index{
+            .card{
+                width: 200px;
+                height: 300px;
+                .card-text{
+                    font-size: 10px;
+                }
+            }
+        }
     }
     .nosotros{
-        grid-template-columns: 300px;
-        gap:10px;
-        font-size: x-small;
+        font-size:small;
+            .nos{
+                width: 90%;
+                height: 50vh;
+                
+            }
+        }
+        .contacto{
+            label{
+                font-size:x-small;
+            }
+            input{
+                width: 150px;
+            }
+            .botones{
+                input{
+                    margin: 15px;
+                }
+            }
+        }
     }
-}
