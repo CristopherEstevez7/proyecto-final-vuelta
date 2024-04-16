@@ -433,7 +433,7 @@ main .card-section {
     padding: 20px; }
 
 /*Desktop*/
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .categoria-index {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); } }
