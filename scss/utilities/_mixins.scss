@@ -1,0 +1,13 @@
+@mixin flex($width,$height,$justify,$align,$direction){
+    display: flex;
+    width: $width;
+    height: $height;
+    justify-content:$justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin  fondo($img,$bgr,$bgs){
+    background-image: $img;
+    background-repeat: $bgr;
+    background-size: $bgs;
+}

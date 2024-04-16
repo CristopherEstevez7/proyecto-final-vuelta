@@ -39,7 +39,7 @@ header nav {
       color: white;
       text-decoration: none; }
       header nav .navbar-nav .nav-item .suscripcion:hover {
-        background-color: #0f020651; }
+        background-color: #e746748a; }
   header nav .collapse {
     justify-content: end; }
   header nav .logo-grande {
@@ -47,7 +47,7 @@ header nav {
     margin: 15px; }
   header nav .logo-chico {
     width: 44px;
-    margin: 15px 250px 15px 10px; }
+    margin: 15px 10px 15px 10px; }
 
 main .fondo {
   display: flex;
@@ -119,7 +119,8 @@ main .categoria-index {
   height: 80vh;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/fondo-1.jpeg);
+  flex-direction: row;
+  background-image: url(../assets/fondo-2.jpeg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -150,97 +151,171 @@ footer {
     font-size: large;
     padding: 20px; }
 
-/**estilo-css***********************************************/
-/*Nosotros*/
-/**/
-/*suscribite y contacto**/
-/**Categorias*/
-.categorias {
-  display: none; }
-
-.categorias li:hover {
-  background-color: #e74673;
-  border-radius: 5px; }
-
-.categorias-chico {
-  display: none; }
-
-/**/
-/*automotriz**/
-/**barbagallo*/
-.barbagallo {
-  display: grid;
-  width: 90%;
-  height: 70vh;
+.contacto {
+  display: flex;
+  width: 100%;
+  height: 80vh;
   justify-content: center;
-  align-content: center;
-  grid-template-columns: repeat(5, 300px);
-  grid-template-rows: repeat(4, 200px);
-  gap: 20px;
-  grid-template-areas: ". . . logo logo" "tour tour tour desc desc" "tour tour tour mapa mapa" ". . . horarios horarios"; }
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../assets/fondo-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.tour-virtual {
-  grid-area: tour; }
+.contactanos {
+  color: white;
+  padding: 20px; }
 
-.tour-virtual iframe {
-  width: 100%;
-  height: 100%; }
+.nya {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
 
-.logo-barbagallo {
-  grid-area: logo;
-  justify-self: start;
-  align-self: self-end; }
+.mail {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
 
-.logo-barbagallo img {
-  width: 200px; }
+.comentario {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
 
-.descripcion {
-  grid-area: desc; }
+.textarea {
+  margin: 10px;
+  padding: 10px; }
 
-.descripcion h2 {
-  color: #e74673; }
+.botones {
+  margin: 10px;
+  padding: 10px; }
+  .botones .btn {
+    background-color: #e74673;
+    color: white; }
+    .botones .btn:hover {
+      background-color: #e746748a; }
 
-.mapa-barbagallo {
-  grid-area: mapa; }
-
-.mapa-barbagallo img {
-  width: 100%;
-  height: 100%; }
-
-.horarios-barbagallo {
-  grid-area: horarios; }
-
-.horarios {
-  border-style: double; }
-
-.pie {
-  background-color: #e74673;
-  position: absolute;
-  top: 1500px;
-  width: 100%;
+.logopng {
+  width: 100px;
   height: 100px; }
 
-.contacto a {
-  color: #f7f4eb;
-  text-decoration: none;
-  margin: 20px;
-  padding: 10px; }
+li a {
+  text-decoration: none; }
 
-.logocontact {
-  width: 500px;
+.contacto-f {
+  background-color: #e74673;
   position: absolute;
-  right: 200px; }
+  top: 900px;
+  width: 100%;
+  height: 100px; }
+  .contacto-f .gracias {
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 20px; }
 
-.logosusc {
-  width: 700px;
-  position: absolute;
-  right: 100px; }
+.suscribite {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../assets/fondo-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.volver a {
-  color: #e74673;
-  text-decoration: none;
-  margin: 20px;
+.separte {
+  color: white;
+  padding: 30px; }
+
+.comercio {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
+
+.tel {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
+
+.comentario {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
+
+.dom {
+  margin: 10px;
+  padding: 10px;
+  color: white; }
+
+.botones-f {
+  margin: 10px;
   padding: 10px; }
+  .botones-f .btn {
+    background-color: #e74673;
+    color: white; }
+    .botones-f .btn:hover {
+      background-color: #e746748a; }
+
+.logopng {
+  width: 100px;
+  height: 100px; }
+
+li a {
+  text-decoration: none; }
+
+.suscribite-f {
+  background-color: #e74673;
+  position: absolute;
+  top: 928px;
+  width: 100%;
+  height: 100px; }
+  .suscribite-f .gracias {
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 20px; }
+
+.hospedaje {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(4, 150px);
+  grid-template-areas: "lista . mapa mapa mapa" "lista . mapa mapa mapa" "lista . mapa mapa mapa" "lista . mapa mapa mapa";
+  justify-content: center;
+  align-content: center;
+  background-image: url(../assets/fondo-2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hospedaje .lista .card {
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: beige; }
+    .hospedaje .lista .card .card-text, .hospedaje .lista .card .card-title {
+      color: rgba(13, 93, 163, 0.5); }
+
+.map-cat {
+  grid-area: mapa; }
+
+.map-cat iframe {
+  width: 100%;
+  height: 100%; }
+
+.lista ul li {
+  list-style: none; }
+
+.hospedaje-f {
+  background-color: #e74673;
+  position: absolute;
+  top: 1040px;
+  width: 100%;
+  height: 100px; }
+  .hospedaje-f .gracias {
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 20px; }
 
 /**media queries*/
 /*tablet*/
