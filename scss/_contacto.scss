@@ -2,53 +2,41 @@
 @import "./utilities/mixins";
 .contacto{
     width: 100%;
-    height: 80vh;
-    @include flex(center,center,column);
+    height: 100vh;
+    @include flex(space-evenly,center,row);
     @include fondo(url(../assets/fondo-2.jpeg),no-repeat,cover);
 
 }
 .contactanos{
         color:white;
         padding: 20px;
+        font-size: 50px;
     }
-.nya{
-    margin: 10px;
-    padding: 10px;
-    color: $color-fuente;
-}
-.mail{
-    margin: 10px;
-    padding: 10px;
-    color: $color-fuente;
-}
-.comentario{
-    margin: 10px;
-    padding: 10px;
-    color: $color-fuente;
-}
-.textarea{
-    margin: 10px;
-    padding: 10px;
-}
-.botones{
-    margin: 10px;
-    padding: 10px;
-    .btn{
-        background-color: #e74673;
-        color: $color-fuente;
-        &:hover{
-            background-color: #e746748a;
+.formulario{
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        .box-form{
+            margin: 10px;
+            padding: 10px;
+            color: $color-fuente;
+        }
+        .textarea{
+            margin: 10px;
+            padding: 10px;
+        }
+        .botones{
+            margin: 10px;
+            padding: 10px;
+            .btn{
+                background-color: #e74673;
+                color: $color-fuente;
+                &:hover{
+                    background-color: #e746748a;
+                }
+            }
         }
     }
-}
-.logopng{
-    width: 100px;
-    height: 100px;
-
-}
-li a{
-    text-decoration: none;
-}
 .contacto-f{
     background-color: #e74673;
     position: absolute;

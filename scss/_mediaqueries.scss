@@ -12,6 +12,7 @@
         }
     }
     .nosotros{
+        flex-direction: column;
         .nos{
             width: 70%;
             height: 40vh;
@@ -63,6 +64,11 @@
         label{
             font-size:small;
         }
+        flex-direction: column;
+        justify-content: center;
+        .formulario{
+            margin-top: 20px;
+        }
     }
 } 
 @media (max-width:670px){
@@ -76,6 +82,11 @@
             }
         }
     }
+    .nosotros{
+        .nos-img{
+            display: none;
+        }
+    }
 }
 @media (max-width:540px){
     .nosotros{
@@ -87,7 +98,6 @@
     }
 }
 /*Mobile*/
-     /* Mostrar mapa grande para pantallas grandes */
      @media only screen and(max-width:426px ){
         main{
             .card-section{
@@ -116,14 +126,23 @@
         }
     }
     .nosotros{
-        font-size:small;
             .nos{
                 width: 90%;
-                height: 50vh;
-                
+                height: 70vh;
             }
         }
         .contacto{
+            .formulario{
+                margin-top: 0px;
+                padding: 10px;
+                .box-form{
+                    margin:0px;
+                    padding: 5px;
+                }
+            }
+            .contactanos{
+                font-size: 20px;
+            }
             label{
                 font-size:x-small;
             }

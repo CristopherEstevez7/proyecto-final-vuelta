@@ -1,11 +1,11 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     nav{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
         background-color:$background-color;
         box-shadow: $box-shadow;
             .navbar-nav{
