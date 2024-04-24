@@ -59,13 +59,16 @@ main{
         .slogan{
             color: $color-fuente;
             font-size: 32px;
+            padding-left: 20px;
         }
         .slogan-1{
             color:$color-fuente;
             font-size: 48px;
+            padding-left: 20px;
         }
         .d-flex{
             width: 40%;
+            padding-left: 20px;
             
             .btn-outline-success {
                 --bs-btn-color: #ffff;

@@ -61,12 +61,15 @@ main .fondo {
   background-size: cover; }
   main .fondo .slogan {
     color: white;
-    font-size: 32px; }
+    font-size: 32px;
+    padding-left: 20px; }
   main .fondo .slogan-1 {
     color: white;
-    font-size: 48px; }
+    font-size: 48px;
+    padding-left: 20px; }
   main .fondo .d-flex {
-    width: 40%; }
+    width: 40%;
+    padding-left: 20px; }
     main .fondo .d-flex .btn-outline-success {
       --bs-btn-color: #ffff;
       --bs-btn-border-color: #ffff;
@@ -359,12 +362,15 @@ main .fondo {
   background-size: cover; }
   main .fondo .slogan {
     color: white;
-    font-size: 32px; }
+    font-size: 32px;
+    padding-left: 20px; }
   main .fondo .slogan-1 {
     color: white;
-    font-size: 48px; }
+    font-size: 48px;
+    padding-left: 20px; }
   main .fondo .d-flex {
-    width: 40%; }
+    width: 40%;
+    padding-left: 20px; }
     main .fondo .d-flex .btn-outline-success {
       --bs-btn-color: #ffff;
       --bs-btn-border-color: #ffff;
@@ -597,5 +603,6 @@ main .card-section {
     .card-section .categoria-index .card .card-text {
       font-size: 10px; }
   .nosotros .nos {
+    margin-top: 100px;
     width: 90%;
     height: 70vh; } }
