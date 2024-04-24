@@ -18,7 +18,7 @@
     <title>suscribite/Vuelta</title>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg nav-bar nav-ul">
+    <nav class="navbar navbar-dark navbar-expand-lg nav-bar nav-ul">
         <div class="container-fluid">
         <a class="navbar-brand logo-grande" href="../index.html"><img class="logo-grande" src="../assets/vuelta-blanco.png" alt=""></a>
         <a class="navbar-brand logo-chico" href="../index.html"><img  class="logo-chico" src="../assets/vuelta-iso-blanco.png" alt=""></a>
@@ -46,44 +46,45 @@
 </header>
 <body >
     
-    <main class="suscribite">
-        <h1 class="separte">Se parte de Vuelta!</h1> 
+    <main >
+        <section class="suscribite">
+            <h1 class="separte">Se parte de Vuelta!</h1> 
         <form class="formulario" action="#">
-            <div class="nya">
+            <div class="box-form">
                 <label for="name">Nombre y Apellido</label>
                 <input type="text" name="name">
             </div>
         
-            <div class="comercio">
+            <div class="box-form">
                 <label for="comerce">Empresa o Comercio*</label>
                 <input type="text" name="comerce" required>
             </div>
             
-            <div  class="dom">
+            <div  class="box-form">
                 <label for="direc">Domicilio</label>
                 <input type="text" name="direc">
             </div>
-            <div class="tel">
+            <div class="box-form">
                 <label for="tel">Telefono</label>
                 <input type="number" name="tel">
             </div>
-            <div class="mail">
+            <div class="box-form">
                 <label for="mail">Email*</label>
                 <input type="email" name="mail" required>
             </div>
-        <div class="comentario">
+        <div class="box-form">
             <label for="comentario">Dejanos un comentario...</label>
             </div>
         <div class="textarea">
             <textarea name="comentario" id="" cols="30" rows="10"></textarea>
         </div>
         
-            <div class="botones-f">
-                <input class="btn" type="submit" value="Enviar Datos">
-                <input class="btn" type="reset" value="Borrar">
+            <div class="botones">
+                <input class="btn btn-sm" type="submit" value="Enviar Datos">
+                <input class="btn btn-sm" type="reset" value="Borrar">
             </div>
         </form>
-
+        </section>
     </main>
     <footer class="suscribite-f">
         <p class="gracias">¡GRACIAS!</p>

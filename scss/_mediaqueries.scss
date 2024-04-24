@@ -1,6 +1,13 @@
 @import "_index.scss";
 /*Desktop*/
-
+@media (min-width:1025px){
+    .map-2,.map3{
+        display: none;
+    }
+    .map-1{
+        display: block;
+    }
+}
 @media only screen and(max-width:1024px ){
     main{
         .card-section{
@@ -19,6 +26,29 @@
             
         }
     }
+    .hosp-main{
+        height: 1700px;
+    }
+    .hosp-section{
+        .hospedaje{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4fr;
+            .lista{
+                padding-top: 20px;
+            }
+        }
+    }
+    
+
+    .hospedaje-f{
+        top:1700px;
+    }
+    .map-1,.map-3{
+        display: none;
+    }
+    .map-2{
+        display: block;
+    }
 }
 
 /*tablet*/
@@ -33,6 +63,26 @@
             }
             .slogan-1{
                 font-size:25px;
+            }
+        }
+    }
+}
+
+@media (max-width:890px){
+
+    .hosp-main{
+        .hosp-h{
+            padding-bottom: 20px;
+        }
+    }
+    .hosp-section{
+        .hospedaje{
+            .lista{
+                width: 500px;
+                padding-top: 20px;
+                .card{
+                    width: 450px;
+                }
             }
         }
     }
@@ -60,7 +110,7 @@
             
         }
     }
-    .contacto{
+    .contacto, .suscribite{
         label{
             font-size:small;
         }
@@ -70,7 +120,66 @@
             margin-top: 20px;
         }
     }
+    .suscribite{
+        height: 1200px;
+        .separte{
+            margin-top: 250px;
+        }
+    }
+    .suscribite-f{
+        top: 1200px;
+    }
+    .hosp-main{
+        height: 2500px;
+    }
+    .hosp-main{
+        height: 1500px;
+        .hosp-h{
+            font-size: large;
+            padding-bottom: 20px;
+        }
+    }
+    .hosp-section{
+        .hospedaje{
+            margin-top:20px;
+            .map-cat{
+                margin-top:20px;
+            }
+            .lista{
+                padding-top: 20px;
+                .list-group{
+                    .list-group-item{
+                        .card{
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hospedaje-f{
+        top:1500px;
+    }
+    
 } 
+@media (max-width:767px){
+    .hosp-section{
+        .hospedaje{
+            margin-top:20px;
+            .map-cat{
+                margin-top:20px;
+            }
+            .lista{
+                padding-top: 20px;
+                .card{
+                    .img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width:670px){
     main{
         .fondo{
@@ -96,9 +205,35 @@
             
         }
     }
+    .map-1,.map-2{
+        display: none;
+    }
+    .map-3{
+        display: block;
+    }
+    .hosp-section{
+        .hospedaje{
+            margin-top:20px;
+            .map-cat{
+                margin-top:20px;
+            }
+            .lista{
+                padding-top: 20px;
+                .list-group{
+                    width: 320px;
+                    .list-group-item{
+                        .card{
+                            width: 280px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 /*Mobile*/
-     @media only screen and(max-width:426px ){
+    @media only screen and(max-width:426px ){
         main{
             .card-section{
                 .categoria-index{
@@ -108,6 +243,55 @@
                 }
             }
         }
+        .contacto , .suscribite{
+            .formulario{
+                margin-top: 0px;
+                padding: 10px;
+                .box-form{
+                    margin:0px;
+                    padding: 5px;
+                }
+            }
+            .contactanos , .separte{
+                font-size: 20px;
+                margin-top: 150px;
+            }
+            label{
+                font-size:x-small;
+            }
+            input{
+                width: 150px;
+            }
+            .botones{
+                input{
+                    margin: 15px;
+                }
+            }
+        }
+        .suscribite{
+            height: 900px;
+        }
+        .suscribite-f{
+            top: 900px;
+        }
+        .hosp-section{
+        .hospedaje{
+            margin-top:20px;
+            .map-cat{
+                margin-top:20px;
+            }
+            .lista{
+                width: 320px;
+                padding-top: 20px;
+                .card{
+                    width: 300px;
+                    .img{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     }
 @media (max-width: 320px) {
     .logo-chico{
@@ -131,28 +315,5 @@
                 height: 70vh;
             }
         }
-        .contacto{
-            .formulario{
-                margin-top: 0px;
-                padding: 10px;
-                .box-form{
-                    margin:0px;
-                    padding: 5px;
-                }
-            }
-            .contactanos{
-                font-size: 20px;
-            }
-            label{
-                font-size:x-small;
-            }
-            input{
-                width: 150px;
-            }
-            .botones{
-                input{
-                    margin: 15px;
-                }
-            }
-        }
+
     }

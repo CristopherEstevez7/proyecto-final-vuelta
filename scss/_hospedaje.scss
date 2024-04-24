@@ -1,50 +1,57 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
-main{
+.hosp-main{
     @include fondo(url(../assets/fondo-2.jpeg),no-repeat,cover);
+    height: 1500px;
+    .hosp-h{
+        color:white;
+        padding-top: 200px;
+    }
 }
-.hosp-section{
-    display: flex;
-    justify-content:center;
-    padding: 50px;
-.hospedaje{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr;
-    justify-content: center;
-    align-content: center;
-    .lista{
-            .card{
-                border-radius: 5px;
-                box-shadow: $box-shadow;
-                background-color: beige;
-                .card-text , .card-title{
-                    color:rgba(13, 93, 163, 0.5);
-                }
+.map-1,.map-2,.map-3{
+    display: none;
+}
+    .hosp-section{
+        display: flex;
+        justify-content:center;
+        padding: 50px;
+    .hospedaje{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 4fr 1.5fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-content: center;
+        .lista{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            justify-self: center;
+            align-self: center;
+            .list-group{
+                --bs-list-group-bg:rgba(17, 24 ,39, 1);
+                --bs-list-group-border-color:rgba(17, 24 ,39, 1) ;}
+                .card{
+                    border-radius: 5px;
+                    box-shadow: $box-shadow;
+                    background-color: beige;
+                    .card-text , .card-title{
+                        color:rgba(13, 93, 163, 0.5);
+                    }
+            }
         }
-        justify-self: center;
-        align-self: center;
-    }
-    .map-cat{
-        justify-self: center;
-        align-self: center;
-    }
-    }
+        .map-cat{
+            justify-self: center;
+            align-self: center;
+        }
+        }
+}
 
-}
-.lista{
-    ul{
-        li{
-            list-style: none;
-        }
-    }
-}
 .hospedaje-f{
     background-color: #e74673;
     position: absolute;
-    top: 1150px;
+    top: 1500px;
     width: 100%;
     height: 100px;
     .gracias{

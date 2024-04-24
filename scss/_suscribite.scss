@@ -2,35 +2,21 @@
 @import "./utilities/mixins";
 .suscribite{
     width: 100%;
-    height: 100vh;
-    @include flex(center,center,column);
+    height: 980px;
+    @include flex(space-evenly,center,row);
     @include fondo(url(../assets/fondo-2.jpeg),no-repeat,cover);
 }
 .separte{
     color:white;
-    padding: 30px;
+    padding: 20px;
+    font-size: 50px;
 }
-.comercio{
+.box-form{
     margin: 10px;
     padding: 10px;
     color: $color-fuente;
 }
-.tel{
-    margin: 10px;
-    padding: 10px;
-    color: $color-fuente;
-}
-.comentario{
-    margin: 10px;
-    padding: 10px;
-    color:$color-fuente;
-}
-.dom{
-    margin: 10px;
-    padding: 10px;
-    color:$color-fuente;
-}
-.botones-f{
+.botones{
     margin: 10px;
     padding: 10px;
     .btn{
@@ -52,7 +38,7 @@ li a{
 .suscribite-f{
     background-color: #e74673;
     position: absolute;
-    top: 928px;
+    top: 980px;
     width: 100%;
     height: 100px;
     .gracias{

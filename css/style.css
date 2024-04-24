@@ -209,46 +209,32 @@ footer {
 
 .suscribite {
   width: 100%;
-  height: 100vh;
+  height: 980px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   background-image: url(../assets/fondo-2.jpeg);
   background-repeat: no-repeat;
   background-size: cover; }
 
 .separte {
   color: white;
-  padding: 30px; }
+  padding: 20px;
+  font-size: 50px; }
 
-.comercio {
+.box-form {
   margin: 10px;
   padding: 10px;
   color: white; }
 
-.tel {
-  margin: 10px;
-  padding: 10px;
-  color: white; }
-
-.comentario {
-  margin: 10px;
-  padding: 10px;
-  color: white; }
-
-.dom {
-  margin: 10px;
-  padding: 10px;
-  color: white; }
-
-.botones-f {
+.botones {
   margin: 10px;
   padding: 10px; }
-  .botones-f .btn {
+  .botones .btn {
     background-color: #e74673;
     color: white; }
-    .botones-f .btn:hover {
+    .botones .btn:hover {
       background-color: #e746748a; }
 
 .logopng {
@@ -261,7 +247,7 @@ li a {
 .suscribite-f {
   background-color: #e74673;
   position: absolute;
-  top: 928px;
+  top: 980px;
   width: 100%;
   height: 100px; }
   .suscribite-f .gracias {
@@ -270,10 +256,17 @@ li a {
     font-size: large;
     padding: 20px; }
 
-main {
+.hosp-main {
   background-image: url(../assets/fondo-2.jpeg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 1500px; }
+  .hosp-main .hosp-h {
+    color: white;
+    padding-top: 200px; }
+
+.map-1, .map-2, .map-3 {
+  display: none; }
 
 .hosp-section {
   display: flex;
@@ -283,13 +276,19 @@ main {
     display: grid;
     width: 100%;
     height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 4fr 1.5fr;
     grid-template-rows: 1fr;
     justify-content: center;
     align-content: center; }
     .hosp-section .hospedaje .lista {
+      display: flex;
+      justify-content: center;
+      align-content: center;
       justify-self: center;
       align-self: center; }
+      .hosp-section .hospedaje .lista .list-group {
+        --bs-list-group-bg:rgba(17, 24 ,39, 1);
+        --bs-list-group-border-color:rgba(17, 24 ,39, 1) ; }
       .hosp-section .hospedaje .lista .card {
         border-radius: 5px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -300,13 +299,10 @@ main {
       justify-self: center;
       align-self: center; }
 
-.lista ul li {
-  list-style: none; }
-
 .hospedaje-f {
   background-color: #e74673;
   position: absolute;
-  top: 1150px;
+  top: 1500px;
   width: 100%;
   height: 100px; }
   .hospedaje-f .gracias {
@@ -425,6 +421,12 @@ main .card-section {
     padding: 20px; }
 
 /*Desktop*/
+@media (min-width: 1025px) {
+  .map-2, .map3 {
+    display: none; }
+  .map-1 {
+    display: block; } }
+
 @media only screen and (max-width: 1024px) {
   main .card-section .categoria-index {
     grid-template-columns: repeat(2, 1fr);
@@ -434,7 +436,20 @@ main .card-section {
     flex-direction: column; }
     .nosotros .nos {
       width: 70%;
-      height: 40vh; } }
+      height: 40vh; }
+  .hosp-main {
+    height: 1700px; }
+  .hosp-section .hospedaje {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr; }
+    .hosp-section .hospedaje .lista {
+      padding-top: 20px; }
+  .hospedaje-f {
+    top: 1700px; }
+  .map-1, .map-3 {
+    display: none; }
+  .map-2 {
+    display: block; } }
 
 /*tablet*/
 .logo-grande, .logo-chico {
@@ -445,6 +460,15 @@ main .card-section {
     font-size: 20px; }
   main .fondo .slogan-1 {
     font-size: 25px; } }
+
+@media (max-width: 890px) {
+  .hosp-main .hosp-h {
+    padding-bottom: 20px; }
+  .hosp-section .hospedaje .lista {
+    width: 500px;
+    padding-top: 20px; }
+    .hosp-section .hospedaje .lista .card {
+      width: 450px; } }
 
 @media (min-width: 769px) {
   .logo-grande {
@@ -458,13 +482,46 @@ main .card-section {
   .nosotros .nos {
     width: 80%;
     height: 50vh; }
-  .contacto {
+  .contacto, .suscribite {
     flex-direction: column;
     justify-content: center; }
-    .contacto label {
+    .contacto label, .suscribite label {
       font-size: small; }
-    .contacto .formulario {
-      margin-top: 20px; } }
+    .contacto .formulario, .suscribite .formulario {
+      margin-top: 20px; }
+  .suscribite {
+    height: 1200px; }
+    .suscribite .separte {
+      margin-top: 250px; }
+  .suscribite-f {
+    top: 1200px; }
+  .hosp-main {
+    height: 2500px; }
+  .hosp-main {
+    height: 1500px; }
+    .hosp-main .hosp-h {
+      font-size: large;
+      padding-bottom: 20px; }
+  .hosp-section .hospedaje {
+    margin-top: 20px; }
+    .hosp-section .hospedaje .map-cat {
+      margin-top: 20px; }
+    .hosp-section .hospedaje .lista {
+      padding-top: 20px; }
+      .hosp-section .hospedaje .lista .list-group .list-group-item .card {
+        width: 500px; }
+  .hospedaje-f {
+    top: 1500px; } }
+
+@media (max-width: 767px) {
+  .hosp-section .hospedaje {
+    margin-top: 20px; }
+    .hosp-section .hospedaje .map-cat {
+      margin-top: 20px; }
+    .hosp-section .hospedaje .lista {
+      padding-top: 20px; }
+      .hosp-section .hospedaje .lista .card .img {
+        display: none; } }
 
 @media (max-width: 670px) {
   main .fondo .slogan {
@@ -477,14 +534,58 @@ main .card-section {
 @media (max-width: 540px) {
   .nosotros .nos {
     width: 90%;
-    height: 50vh; } }
+    height: 50vh; }
+  .map-1, .map-2 {
+    display: none; }
+  .map-3 {
+    display: block; }
+  .hosp-section .hospedaje {
+    margin-top: 20px; }
+    .hosp-section .hospedaje .map-cat {
+      margin-top: 20px; }
+    .hosp-section .hospedaje .lista {
+      padding-top: 20px; }
+      .hosp-section .hospedaje .lista .list-group {
+        width: 320px; }
+        .hosp-section .hospedaje .lista .list-group .list-group-item .card {
+          width: 280px; } }
 
 /*Mobile*/
 @media only screen and (max-width: 426px) {
   main .card-section .categoria-index {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px; } }
+    gap: 20px; }
+  .contacto .formulario, .suscribite .formulario {
+    margin-top: 0px;
+    padding: 10px; }
+    .contacto .formulario .box-form, .suscribite .formulario .box-form {
+      margin: 0px;
+      padding: 5px; }
+  .contacto .contactanos, .contacto .separte, .suscribite .contactanos, .suscribite .separte {
+    font-size: 20px;
+    margin-top: 150px; }
+  .contacto label, .suscribite label {
+    font-size: x-small; }
+  .contacto input, .suscribite input {
+    width: 150px; }
+  .contacto .botones input, .suscribite .botones input {
+    margin: 15px; }
+  .suscribite {
+    height: 900px; }
+  .suscribite-f {
+    top: 900px; }
+  .hosp-section .hospedaje {
+    margin-top: 20px; }
+    .hosp-section .hospedaje .map-cat {
+      margin-top: 20px; }
+    .hosp-section .hospedaje .lista {
+      width: 320px;
+      padding-top: 20px; }
+      .hosp-section .hospedaje .lista .card {
+        width: 300px; }
+        .hosp-section .hospedaje .lista .card .img {
+          display: none; } }
 
 @media (max-width: 320px) {
   .logo-chico {
@@ -497,18 +598,4 @@ main .card-section {
       font-size: 10px; }
   .nosotros .nos {
     width: 90%;
-    height: 70vh; }
-  .contacto .formulario {
-    margin-top: 0px;
-    padding: 10px; }
-    .contacto .formulario .box-form {
-      margin: 0px;
-      padding: 5px; }
-  .contacto .contactanos {
-    font-size: 20px; }
-  .contacto label {
-    font-size: x-small; }
-  .contacto input {
-    width: 150px; }
-  .contacto .botones input {
-    margin: 15px; } }
+    height: 70vh; } }
